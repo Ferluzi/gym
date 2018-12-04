@@ -23,7 +23,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/popper.min.js"></script>
-    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="../js/ajax.js"></script>
 
 </head>
 <body>
@@ -50,29 +50,20 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
                         <div class="col">
 
-                            <form role="form" action="" name="search_form" id="search_form" method="POST">
+                           <form role="form" action="" name="search_form" id="search_form" method="POST">
 
                                     <div class="form-row aling-item-center  ">
                                         <div class="col-auto">
 
                                             <label class="sr-only" for="rut">Rut</label>
-                                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Rut">
+                                            <input type="text" class="form-control mb-2" type="text"  name="search" id="search" value="" placeholder="Buscar...">
                                         
                                         </div>
-
-                                        <div class="col-auto">
-                                            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
-                                        </div>
-
                                     </div>
 
 
 
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido"> 
-
-                                    </div>
+                                 
 
                                 
                                 </form>
