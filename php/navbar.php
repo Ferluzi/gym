@@ -1,7 +1,7 @@
       <!-- MENU NABVAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
           <a class="navbar-brand" href="#">
-            <img src="../img/Muscle.png" width="60" height="50" alt=""> Bienvenido <?php echo $_SESSION['username']; ?>
+            <img src="../img/Muscle.png" width="60" height="50" alt=""> Bienvenido <?php echo $_SESSION['name']; ?>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

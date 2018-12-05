@@ -16,7 +16,7 @@ if(!empty($_POST)){
 				break;
 			}
 			if($user_id==null){
-				print "<script>alert(\"Acceso invalido.\");window.location='../login.php';</script>";
+				print "<script>alert(\"Acceso invalido.\");window.location='../adm/index.php';</script>";
 			}else{
 				session_start();
 				$_SESSION["user_id"]=$user_id;
