@@ -27,6 +27,3 @@ $consulta="SELECT * FROM user WHERE rut LIKE '%".$search."%' OR name like '%".$s
 
 elseif ($total>0 && == '') echo '<h2 class="text-success" ingrese un parametro de busqueda </h2>';
 else echo '<h2 class="text-warning"> NO se han encontrado registros </h2>';
-
-
-blaaa

@@ -74,7 +74,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                 <option>Plan Ilimitado $22.000</option>
                                 <option>Plan 15 Dias x Mes $19.000</option>
                                 <option>Plan 10 Dias x Mes $15.000</option>
-                                <option>Pase Dierio</option>
+                                <option>Pase Diario</option>
                                 </select>
                         </div>  
                         
