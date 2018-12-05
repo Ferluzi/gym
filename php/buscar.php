@@ -9,7 +9,7 @@ sleep(2);
             
         }
 
-$consulta="SELECT * FROM user WHERE rut LIKE '%".$search."%' OR name like '%".$search."%' ORDER by id LIMIT 5 ";
+$consulta="SELECT * FROM user WHERE rut LIKE '%".$search."%' OR name like '%".$search."%' ORDER by created_at LIMIT 5 ";
     $resultado = $con->query($consulta);
     $fila = mysql_fetch_assoc($resultado);
     $total = mysql_num_rows($resultado);
