@@ -5,9 +5,17 @@ session_start();
 if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 	print "<script>alert(\"Acceso invalido!\");window.location='../php/login.php';</script>";
 }
-?> 
-<?php 
+
+?>
+<?php
  include_once('../php/fc.php');
+
+ $opciones=null;
+ $sql1= "select * from user";
+ $query = $con->query($sql1);
+ while ($r=$query->fetch_array()) {
+		$opciones .= '"' . $r['rut'] . '",';
+ }
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +32,19 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <script src="../js/bootstrap.js"></script>
     <script src="../js/popper.min.js"></script>
     <script type="text/javascript" src="../js/ajax.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script>
+		$( function() {
 
+		// Variable que recoge el resultado de la consulta sobre la tabla Provincias, Jquery trabajará sobre este resultado para dinamizar el funcionamiento.
+		var availableTags = [<?php echo $opciones ?>];
+		$( "#search" ).autocomplete({
+		source: availableTags
+		});
+		} );
+		</script>
 </head>
 <body>
 
@@ -56,16 +76,16 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                         <div class="col-auto">
 
                                             <label class="sr-only" for="rut">Rut</label>
-                                            <input type="text" class="form-control mb-2" type="text"  name="search" id="search" value="" placeholder="Buscar...">
-                                        
+                                            <input type="text" class="form-control mb-2" name="search" id="search" value="" placeholder="Buscar...">
+
                                         </div>
                                     </div>
 
 
 
-                                 
 
-                                
+
+
                                 </form>
 
                                 	<div name="resultados" id="resultados" class="resp"></div>
@@ -80,6 +100,6 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 
 
-    
+
 </body>
 </html>
