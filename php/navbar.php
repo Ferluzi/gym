@@ -16,6 +16,9 @@
               </li>
               <?php else:?>
               <!-- si estoy registrado muesta los siguientes links -->
+              <li>
+                  <a class="nav-link" href="home.php"><p class="text-info">inicio</p></a>
+              </li>
               <li class="nav-item">  
                   <a class="nav-link" href="../adm/crearusuario.php"><p class="text-info">Crear Usuarios</p></a>
               </li>

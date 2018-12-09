@@ -32,7 +32,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 
 
-<h1 class="text-center text-info"> bootstrap calendar</h1>
+<h1 class="text-center text-info"> inicio</h1>
  
 </body>
 </html>
