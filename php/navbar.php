@@ -16,21 +16,19 @@
               </li>
               <?php else:?>
               <!-- si estoy registrado muesta los siguientes links -->
-              <li>
-                  <a class="nav-link" href="home.php"><p class="text-info">inicio</p></a>
+              <li class="nav-item ">
+                  <a class="nav-link text-info" href="home.php">inicio</a>
               </li>
-              <li class="nav-item">  
-                  <a class="nav-link" href="../adm/crearusuario.php"><p class="text-info">Crear Usuarios</p></a>
+              <li class="nav-item active">  
+                  <a class="nav-link text-info" href="../adm/crearusuario.php">Crear Usuarios</a>
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link" href="../adm/asistencia.php"> Control de asistencia</a>
+                  <a class="nav-link text-info" href="../adm/asistencia.php">Control de asistencia</a>
               </li>
 
-
-
               <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mi Perfil</a>
+              <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mi Perfil</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">My Perfil</a>
                     <a class="dropdown-item" href="#">Chat</a>

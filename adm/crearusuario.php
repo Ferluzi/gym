@@ -16,6 +16,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estylo.css">
     <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/popper.min.js"></script> 
 </head>
 <body>
     <!-- MENU NABVAR -->
@@ -69,12 +71,12 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                 <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Repita contraseña" required>
                         </div>
                         <div class="form-group">
-                                <label for="exampleFormControlSelect1" class="badge badge-info">Seleccione un Plan</label>
-                                <select class="form-control" id="exampleFormControlSelect1" required>
-                                <option>Plan Ilimitado $22.000</option>
-                                <option>Plan 15 Dias x Mes $19.000</option>
-                                <option>Plan 10 Dias x Mes $15.000</option>
-                                <option>Pase Diario</option>
+                                <label for="plan" class="badge badge-info">Seleccione un Plan</label>
+                                <select class="form-control" id="plan" name="plan[]" required>
+                                <option value="1">Plan Ilimitado $22.000</option>
+                                <option value="2">Plan 15 Dias x Mes $19.000</option>
+                                <option value="3">Plan 10 Dias x Mes $15.000</option>
+                                <option value="4">Pase Diario</option>
                                 </select>
                         </div>  
                         
@@ -118,6 +120,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
         </div>
 
     </div>
+
 
 </section>   
 
