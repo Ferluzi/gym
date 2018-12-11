@@ -13,9 +13,9 @@ if(!empty($_POST)){
 				break;
 			}
 			if($found){
-				print "<script>alert(\"Nombre de usuario o email ya estan registrados.\");window.location='../registro.php';</script>";
+				print "<script>alert(\"Nombre de usuario o email ya estan registrados.\");window.location='../adm/crearusuario.php';</script>";
 			}
-			$sql = "insert into user(plan,rut,name,surname,email,password,created_at) value (\"$_POST[plan[]\",\"$_POST[rut]\",\"$_POST[name]\",\"$_POST[surname]\",\"$_POST[email]\",\"$_POST[password]\",NOW())";
+			$sql = "insert into user(plan,rut,name,surname,email,password,created_at) value (\"$_POST[plan]\",\"$_POST[rut]\",\"$_POST[name]\",\"$_POST[surname]\",\"$_POST[email]\",\"$_POST[password]\",NOW())";
 			$query = $con->query($sql);
 			if($query!=null){
 				print "<script>alert(\"Registro exitoso. Proceda a logearse\");window.location='../adm/crearusuario.php';</script>";

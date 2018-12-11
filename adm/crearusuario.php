@@ -81,8 +81,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                         </div>  
                         
                         <hr>
-                        <button type="reset" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-times"></i></button>
-                        <button type="submit" class="btn btn-info btn-circle btn-xl" value="Registrar"><i class="fa fa-check"></i></button>
+                        <button type="submit" value="registrar" class="btn btn-info"> Guardar</button>
                         
 
                 </form>
