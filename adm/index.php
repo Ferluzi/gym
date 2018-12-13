@@ -116,6 +116,7 @@
 
 
 
+
     <!--para que funcionen los dopdowms hay que adjuntar el js de bootstrap al fin del body-->
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>

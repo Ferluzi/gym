@@ -71,8 +71,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                 <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Repita contraseña" required>
                         </div>
                         <div class="form-group">
-                                <label for="plan" class="badge badge-info">Seleccione un Plan</label>
-                                <select class="form-control" id="plan" name="plan[]" required>
+                                <label for="id" class="badge badge-info">Seleccione un Plan</label>
+                                <select class="form-control" id="id" name="id[]" required>
                                 <option value="1">Plan Ilimitado $22.000</option>
                                 <option value="2">Plan 15 Dias x Mes $19.000</option>
                                 <option value="3">Plan 10 Dias x Mes $15.000</option>
@@ -81,7 +81,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                         </div>  
                         
                         <hr>
-                        <button type="submit" value="registrar" class="btn btn-info"> Guardar</button>
+                        <button type="submit" value="registrar" class="btn btn-info btn-block"> Guardar</button>
                         
 
                 </form>
@@ -122,6 +122,12 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 
 </section>   
+
+
+<?php
+echo $_SERVER['HTTP_USER_AGENT'];
+?>
+
 
 
 
