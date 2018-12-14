@@ -72,7 +72,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                         </div>
                         <div class="form-group">
                                 <label for="id" class="badge badge-info">Seleccione un Plan</label>
-                                <select class="form-control" id="id" name="id[]" required>
+                                <select class="form-control" id="id" name="id" onchange="showUser(this.value)">
+                                <option value="">Seleccione un Plan</option>
                                 <option value="1">Plan Ilimitado $22.000</option>
                                 <option value="2">Plan 15 Dias x Mes $19.000</option>
                                 <option value="3">Plan 10 Dias x Mes $15.000</option>
@@ -123,12 +124,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 </section>   
 
-
-<?php
-echo $_SERVER['HTTP_USER_AGENT'];
-?>
-
-
+x
 
 
     <!--para que funcionen los dopdowms hay que adjuntar el js de bootstrap al fin del body-->
