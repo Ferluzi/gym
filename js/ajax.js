@@ -1,6 +1,6 @@
 $(function(){
 	$('#search').focus();
-	$('#search_form').submit(function(e){
+	$('#buscar').submit(function(e){
 		e.preventDefautl();
 	})
 	$('#search').keyup(function(){
@@ -10,7 +10,7 @@ $(function(){
 
 		$.ajax({
 			type: 'POST',
-			url:'php/buscar.php',
+			url:'../php/buscar.php',
 			data:('search=' +envio),
 			success: function(resp){
 				if(resp!=""){

@@ -1,26 +1,42 @@
 <?php 
 sleep(2);
+include ("fc.php");
 require_once('fc.php');
 sleep(1);
     $search = '';
 if (isset($_POST['search'])){
 	$search= $_POST['search'];
-	
 }
-$consulta= "SELECT * FROM user WHERE rut LIKE '%".$search."%' OR nombre LIKE '%".$search."%' ORDER BY created_at LIMIT 5";
-  $resultado = $connect->query($consulta);
+
+$rut = 'rut';
+//$consulta= "SELECT * FROM $tabla_us WHERE rut  LIKE '%".$search."%' OR rut LIKE '%".$search."%' ORDER BY created_at LIMIT 5";
+$consulta= "SELECT * FROM $tabla_us WHERE rut = $rut  ";
+  $resultado = $con->query($consulta);
   $fila = mysqli_fetch_assoc($resultado);
   $total = mysqli_num_rows($resultado); 
 
 ?>
  <?php if ($total>0 && $search!='') { ?>
- 	<h2 class="text-success">Resultado de la busqueda</h2>
+ 	<h2 class="text-success text-center">Resultado de la busqueda</h2>
  	<?php do { ?>
- 		<div class="art">
- 		<h3 class="text-success"><?php echo $fila['nombre']?></h3> <br>
 
- 		<h3 class="text-success"><?php echo $fila['precio']?></h3>
- 		</div>
+		<table class="table table-striped table-dark table-bordered table-hover">
+			<thead>
+				<tr>
+					<th><h4 class="text-primary">Rut</h4></th>
+					<th><h4 class="text-primamry">Nombre</h4></th>
+					<th><h4 class="text-primary">Fecha de Inscipcion</h4></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row"><?php echo $fila['rut']?></th>
+					<td><?php echo $fila['name']?></td>
+					<td><?php echo $fila['created_at']?></td>
+				</tr>
+			</tbody>
+		</table>
+ 	
  	<?php } while ($fila=mysqli_fetch_assoc($resultado)); ?> 
 <?php } 
 

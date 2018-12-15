@@ -53,53 +53,33 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 
 <section>
+        
+    <h1 class="text-info text-center"> Asistencia</h1>
 
-
-        <h1 class="text-info text-center"> Asistencia</h1>
-
-
-<div class="container">
+    <div class="container">
             <div class="row ">
-
                         <div class="col">
-
                             <img class="img-circle" src="../img/muscle.png" alt="" width="400" height="400">
-
                         </div>
 
-
                         <div class="col">
-
-                           <form role="form" action="" name="search_form" id="search_form" method="POST">
-
+                           <form class="form-inline" role="form" action="" name="search_form" id="search_form" method="POST">
                                     <div class="form-row aling-item-center  ">
                                         <div class="col-auto">
-
                                             <label class="sr-only" for="rut">Rut</label>
                                             <input type="text" class="form-control mb-2" name="search" id="search" value="" placeholder="Buscar...">
-
+                                            <button type="button" class="btn btn-outline-primary mb-2" value="btnbuscar">Buscar</button>
                                         </div>
                                     </div>
+                            </form>
 
-
-
-
-
-
-                                </form>
-
-                                	<div name="resultados" id="resultados" class="resp"></div>
-
+                            <div name="resultados" id="resultados" class="resp">
+                            
+                            </div>
                         </div>
             </div>
-
-</div>
+    </div>
 </section>
-
-
-
-
-
 
 </body>
 </html>

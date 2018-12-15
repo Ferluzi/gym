@@ -6,7 +6,7 @@ if(!empty($_POST)){
 			include "fc.php";
 			
 			$found=false;
-			$sql1= "select * from user where name=\"$_POST[name]\" or email=\"$_POST[email]\"";
+			$sql1= "select * from $tabla_us where name=\"$_POST[name]\" or email=\"$_POST[email]\"";
 			$query = $con->query($sql1);
 			while ($r=$query->fetch_array()) {
 				$found=true;
