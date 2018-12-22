@@ -17,7 +17,11 @@ $tabla_us = "user";
 //que lo cambiemos en cada consultaque hagamos.
 
 
+
 $con = mysqli_connect("$host","$user","$password","$db");
+
+
+
 
 if  (mysqli_connect_error()){
     echo 'Error, no se pudo conectar con la bese de datos: ' .mysqli_connect_error();

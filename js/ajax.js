@@ -1,6 +1,9 @@
+
+
+
 $(function(){
 	$('#search').focus();
-	$('#buscar').submit(function(e){
+	$('#search_form').submit(function(e){
 		e.preventDefautl();
 	})
 	$('#search').keyup(function(){
@@ -21,6 +24,8 @@ $(function(){
 		})
 	})
 })
+
+
 var progreso = 0;
 var idIterval = setInterval(function(){
   // Aumento en 10 el progeso

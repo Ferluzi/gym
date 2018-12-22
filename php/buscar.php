@@ -1,6 +1,6 @@
 <?php 
 sleep(2);
-include ("fc.php");
+include "fc.php";
 require_once('fc.php');
 sleep(1);
     $search = '';
@@ -8,9 +8,10 @@ if (isset($_POST['search'])){
 	$search= $_POST['search'];
 }
 
-$rut = 'rut';
-//$consulta= "SELECT * FROM $tabla_us WHERE rut  LIKE '%".$search."%' OR rut LIKE '%".$search."%' ORDER BY created_at LIMIT 5";
-$consulta= "SELECT * FROM $tabla_us WHERE rut = $rut  ";
+
+
+$consulta= "SELECT * FROM $tabla_us WHERE rut LIKE '%".$search."%' OR rut LIKE '%".$search."%' ORDER BY precio LIMIT 5";
+//$consulta= "SELECT * FROM $tabla_us WHERE rut = $rut  ";
   $resultado = $con->query($consulta);
   $fila = mysqli_fetch_assoc($resultado);
   $total = mysqli_num_rows($resultado); 

@@ -32,6 +32,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <script src="../js/bootstrap.js"></script>
     <script src="../js/popper.min.js"></script>
     <script type="text/javascript" src="../js/ajax.js"></script>
+
+    
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -68,7 +70,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                         <div class="col-auto">
                                             <label class="sr-only" for="rut">Rut</label>
                                             <input type="text" class="form-control mb-2" name="search" id="search" value="" placeholder="Buscar...">
-                                            <button type="button" class="btn btn-outline-primary mb-2" value="btnbuscar">Buscar</button>
+                                            <button type="submit" class="btn btn-outline-primary mb-2" value="btnbuscar">Buscar</button>
                                         </div>
                                     </div>
                             </form>
