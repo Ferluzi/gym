@@ -59,18 +59,17 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <h1 class="text-info text-center"> Asistencia</h1>
 
     <div class="container">
-            <div class="row ">
+            <div class="row">
                         <div class="col">
                             <img class="img-circle" src="../img/muscle.png" alt="" width="400" height="400">
                         </div>
 
                         <div class="col">
                            <form class="form-inline" role="form" action="" name="search_form" id="search_form" method="POST">
-                                    <div class="form-row aling-item-center  ">
+                                    <div class="form-row align-items-center">
                                         <div class="col-auto">
                                             <label class="sr-only" for="rut">Rut</label>
                                             <input type="text" class="form-control mb-2" name="search" id="search" value="" placeholder="Buscar...">
-                                            <button type="submit" class="btn btn-outline-primary mb-2" value="btnbuscar">Buscar</button>
                                         </div>
                                     </div>
                             </form>

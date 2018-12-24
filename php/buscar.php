@@ -9,7 +9,6 @@ if (isset($_POST['search'])){
 }
 
 
-
 $consulta= "SELECT * FROM $tabla_us WHERE rut LIKE '%".$search."%' OR rut LIKE '%".$search."%' ORDER BY precio LIMIT 5";
 //$consulta= "SELECT * FROM $tabla_us WHERE rut = $rut  ";
   $resultado = $con->query($consulta);
