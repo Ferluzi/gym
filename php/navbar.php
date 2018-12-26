@@ -16,7 +16,7 @@
               </li>
               <?php else:?>
               <!-- si estoy registrado muesta los siguientes links -->
-              <li class="nav-item ">
+              <li class="nav-item">
                   <a class="nav-link text-info" href="home.php">inicio</a>
               </li>
               <li class="nav-item active">  
