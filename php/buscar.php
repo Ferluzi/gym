@@ -25,8 +25,9 @@ $consulta= "SELECT * FROM $tabla_us WHERE rut = $rut";
 			<thead>
 				<tr>
 					<th><h4 class="text-primary">Rut</h4></th>
-					<th><h4 class="text-primamry">Nombre</h4></th>
+					<th><h4 class="text-primary">Nombre</h4></th>
 					<th><h4 class="text-primary">Fecha de Inscipcion</h4></th>
+					<th><h4 class="text-primary">Calendario</h4></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -34,6 +35,7 @@ $consulta= "SELECT * FROM $tabla_us WHERE rut = $rut";
 					<th scope="row"><?php echo $fila['rut']?></th>
 					<td><?php echo $fila['name']?></td>
 					<td><?php echo $fila['created_at']?></td>
+					<td><input class="form-control" type="date" name="fecha"></td>
 				</tr>
 			</tbody>
 		</table>
