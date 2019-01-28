@@ -26,16 +26,17 @@ $consulta= "SELECT * FROM $tabla_us WHERE rut = $rut";
 				<tr>
 					<th><h4 class="text-primary">Rut</h4></th>
 					<th><h4 class="text-primary">Nombre</h4></th>
-					<th><h4 class="text-primary">Fecha de Inscipcion</h4></th>
+					<th><h4 class="text-primary">Ficha</h4></th>
 					<th><h4 class="text-primary">Calendario</h4></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row"><?php echo $fila['rut']?></th>
+					<td><h8><?php echo $fila['rut']?></h9></td>
 					<td><?php echo $fila['name']?></td>
-					<td><?php echo $fila['created_at']?></td>
+					<!-- <td><?php echo $fila['ficha']?></td> -->
 					<td><input class="form-control" type="date" name="fecha"></td>
+					<td><button class="btn btn-info">Guardar</button></td>
 				</tr>
 			</tbody>
 		</table>
