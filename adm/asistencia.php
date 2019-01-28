@@ -24,6 +24,9 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php
+        include "../php/links.php";
+    ?>
     <title> Asitencia</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
@@ -61,7 +64,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <div class="container">
             <div class="row">
                         <div class="col">
-                            <img class="img-circle" src="../img/muscle.png" alt="" width="400" height="400">
+                            <img class="img-circle" src="../img/calendar.png" alt="" width="400" height="400">
                         </div>
 
                         <div class="col">

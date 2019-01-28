@@ -12,6 +12,9 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 <head>
     <meta charset="UTF-8">
     <title>Admicion</title>
+    <?php
+        include "../php/links.php";
+    ?>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estylo.css">

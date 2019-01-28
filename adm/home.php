@@ -12,6 +12,9 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php
+        include "../php/links.php";
+    ?>
     <title>home</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
