@@ -37,57 +37,92 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
         <div class="jumbotron"> 
 
-            <div class="col-lg-4 offset-4">
+            <div class="col-lg-6 offset-3">
 
                     
                 <form role="form" name="registro" action="../php/registro.php" method="post">
 
-                
-                         <div class="form-group">
-                                <label class="badge badge-info" for="rut">Rut</label>
-                                <input type="text" class="form-control" name="rut" id="rut" placeholder="Rut" required>
+                <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                    <label class="badge badge-info" for="rut">Rut</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="rut" id="rut" placeholder="Rut" required>
+
+                                    <div class="col-3">
+                                        <input type="text" class="form-control" name="dv" id="dv" > 
+                                        </div>
+                                    </div>
+                            </div>
                         </div>   
 
-                        <div class="form-group">
-                                <label class="badge badge-info" for="name">Nombre Completo</label>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
-                        </div>
-
-                        <div class="form-group">
-                                <label class="badge badge-info" for="surname">Apellidos</label>
-                                <input type="text" class="form-control" name="surname" id="surname" placeholder="Apellidos" required>
-                        </div>
-
-                        <div class="form-group">
-                                <label class="badge badge-info" for="email">Correo Electronico</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Correo Electronico" required>
-                        </div>
-
-                        <div class="form-group">
-                                <label class="badge badge-info" for="email">Telefono</label>
-                                <input type="tel" class="form-control" name="fono" id="fono" placeholder="Ingrese Telefono" required>
-                        </div>
-
-
-                        <div class="form-group">      
-                                <label for="password" class="badge badge-info"> Contraseña</label>  
-                                <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese Contraseña" required>
-                        </div> 
+                </div>
+                <div class="row">        
                         
-                        <div class="form-group">
-                                <label for="confirm_password" class="badge badge-info"> Repita Contraseña</label>
-                                <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Repita contraseña" required>
+                        <div class="col">
+                            <div class="form-group">
+                                    <label class="badge badge-info" for="name">Nombre Completo</label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                                <label for="id" class="badge badge-info">Seleccione un Plan</label>
-                                <select class="form-control" id="id" name="id" onchange="showUser(this.value)">
-                                <option value="">Seleccione un Plan</option>
-                                <option value="1">Plan Ilimitado $22.000</option>
-                                <option value="2">Plan 15 Dias x Mes $19.000</option>
-                                <option value="3">Plan 10 Dias x Mes $15.000</option>
-                                <option value="4">Pase Diario</option>
-                                </select>
-                        </div>  
+
+                        <div class="col">
+                            <div class="form-group">
+                                    <label class="badge badge-info" for="surname">Apellidos</label>
+                                    <input type="text" class="form-control" name="surname" id="surname" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+
+                </div>       
+                <div class="row"> 
+
+                        <div class="col">
+                            <div class="form-group">
+                                    <label class="badge badge-info" for="email">Correo Electronico</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Correo Electronico" required>
+                            </div>
+                        </div>
+
+                        <div class="col">        
+                            <div class="form-group">
+                                    <label class="badge badge-info" for="email">Telefono</label>
+                                    <input type="tel" class="form-control" name="fono" id="fono" placeholder="Ingrese Telefono" required>
+                            </div>
+                        </div>
+                </div>      
+                <div class="row">  
+
+                        <div class="col">        
+                            <div class="form-group">      
+                                    <label for="password" class="badge badge-info"> Contraseña</label>  
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese Contraseña" required>
+                            </div> 
+                        </div>
+                        
+                        <div class="col">
+                            <div class="form-group">
+                                    <label for="confirm_password" class="badge badge-info"> Repita Contraseña</label>
+                                    <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Repita contraseña" required>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                    <label for="id" class="badge badge-info">Seleccione un Plan</label>
+                                    <select class="form-control" id="plan" name="plan" onchange="showUser(this.value)">
+                                    <option value="">Seleccione un Plan</option>
+                                    <option value="1">Plan Ilimitado $22.000</option>
+                                    <option value="2">Plan 15 Dias x Mes $19.000</option>
+                                    <option value="3">Plan 10 Dias x Mes $15.000</option>
+                                    <option value="4">Pase Diario</option>
+                                    </select>
+                            </div>  
+                        </div>
+                </div>    
+                
+            </div>   
                         
                         <hr>
                         <button type="submit" value="registrar" class="btn btn-info btn-block"> Guardar</button>

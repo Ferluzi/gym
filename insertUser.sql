@@ -1,8 +1,8 @@
-INSERT INTO `user` (`rut`, `dv`, `name`, `surname`, `email`, `password`, `created_at`) VALUES
-('17256958', '9', 'manu', 'blamanu', 'manubla@bla.com', '123', '2018-11-26 12:43:02'),
-('18374934', '8','bastian', 'ayala', 'basty2@bla.com', '123', '2018-11-26 12:43:02'),
-('19374934', 'k','bastian', 'medina', 'jaja2@bla.com', '123', '2018-11-26 12:43:02'),
-('20934934', '9','victor', 'mobaty', 'tymoba@bla.com', '123', '2018-11-26 12:43:02'),
-('20924934', '7','nepe', 'ayala', 'nepe@bla.com', '123', '2018-11-26 12:43:02'),
-('18336958', '4','noko', 'bla', 'nicolas@bla.com', '123', '2018-11-26 12:43:02'),
-('17526590', '2','nikolas', 'muÃ±oz', 'nikolasmp92@gmail.com', '1427', '2018-11-26 13:05:07')
+INSERT INTO `user` (`rut`, `dv`, `ficha`, `plan`,`name`, `surname`, `email`,`fono`, `password`, `created_at`) VALUES
+('17256958', '9', '00001', '1','manu', 'blamanu', 'manubla@bla.com','123455132', '123', '2018-11-26 12:43:02'),
+('18374934', '8', '00002', '2','bastian', 'ayala', 'basty2@bla.com', '537896186','123', '2018-11-26 12:43:02'),
+('19374934', 'k', '00003', '3','bastian', 'medina', 'jaja2@bla.com', '983961518','123', '2018-11-26 12:43:02'),
+('20934934', '9', '00004', '4','victor', 'mobaty', 'tymoba@bla.com', '915169389','123', '2018-11-26 12:43:02'),
+('20924934', '7', '00005', '3','nepe', 'ayala', 'nepe@bla.com', '123', '593574682','2018-11-26 12:43:02'),
+('18336958', '4', '00006', '1','noko', 'bla', 'nicolas@bla.com', '123', '123987654', '2018-11-26 12:43:02'),
+('17526592', '2', '00007', '2','nikolas', 'muÃ±oz', 'nikolasmp92@gmail.com','966385217', '1427', '2018-11-26 13:05:07')
