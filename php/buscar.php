@@ -32,10 +32,10 @@ $consulta= "SELECT * FROM $tabla_us WHERE rut = $rut";
 			</thead>
 			<tbody>
 				<tr>
-					<td><h8><?php echo $fila['rut']?></h9></td>
+					<td><?php echo $fila['rut']?></td>
 					<td><?php echo $fila['name']?></td>
-					<!-- <td><?php echo $fila['ficha']?></td> -->
-					<td><input class="form-control" type="date" name="fecha"></td>
+					<td><?php echo $fila['ficha']?>
+					<td><input type="datetime-local" name="bdaytime"></td>
 					<td><button class="btn btn-info">Guardar</button></td>
 				</tr>
 			</tbody>

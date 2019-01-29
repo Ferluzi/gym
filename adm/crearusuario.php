@@ -63,6 +63,11 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese Correo Electronico" required>
                         </div>
 
+                        <div class="form-group">
+                                <label class="badge badge-info" for="email">Telefono</label>
+                                <input type="tel" class="form-control" name="fono" id="fono" placeholder="Ingrese Telefono" required>
+                        </div>
+
 
                         <div class="form-group">      
                                 <label for="password" class="badge badge-info"> Contraseña</label>  
