@@ -1,5 +1,5 @@
 CREATE TABLE `user` (  
-  ADD PRIMARY KEY `rut` varchar(20) NOT NULL,
+  `rut` varchar(20) NOT NULL PRIMARY KEY,
   `dv`  varchar(1) NOT null,
   `name` varchar(500) NOT NULL,
   `surname` varchar(100) NOT NULL,
