@@ -28,8 +28,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
+CREATE TABLE `user` (  
   `rut` varchar(20) NOT NULL,
   `name` varchar(500) NOT NULL,
   `surname` varchar(100) NOT NULL,

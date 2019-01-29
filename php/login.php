@@ -11,7 +11,7 @@ if(!empty($_POST)){
 			$sql1= "select * from user where (name=\"$_POST[name]\" or email=\"$_POST[name]\") and password=\"$_POST[password]\" ";
 			$query = $con->query($sql1);
 			while ($r=$query->fetch_array()) {
-				$user_id=$r["id"];
+				$user_id=$r["rut"];
 				$name=$r["name"];
 				break;
 			}
