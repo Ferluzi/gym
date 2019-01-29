@@ -1,5 +1,6 @@
 CREATE TABLE `user` (  
-  `rut` varchar(20) NOT NULL,
+  ADD PRIMARY KEY `rut` varchar(20) NOT NULL,
+  `dv`  varchar(1) NOT null,
   `name` varchar(500) NOT NULL,
   `surname` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
