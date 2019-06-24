@@ -50,6 +50,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                                         <input type="text" class="form-control" name="rut" id="rut" placeholder=" Eje:  17178796" required>
 
                                     <div class="col-2 " >
+                                        <input type="text" class="form-control" name="dv" id="dv" placeholder="-3" > 
                                         </div>
                                     </div>
                             </div>
